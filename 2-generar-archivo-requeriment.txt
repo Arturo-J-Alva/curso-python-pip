@@ -1,0 +1,10 @@
+1. Activar entorno virtual (si es que hay)
+    -   source env/bin/activate
+2. Generar el archivo con el siguiente comando
+    -   pip3 freeze > requirements.txt
+
+3. Revisar lo que hay dentro del archivo (opcional)
+    -   cat requirements.txt
+
+4. Instalar las dependencias necesarias para contribuir más rápido en proyectos
+    -   pip3 install -r requirements.txt

@@ -1,0 +1,7 @@
+pip3 install fastapi
+pip3 install "uvicorn[standard]"
+
+
+* En el caso de web-server, para ejecutar el servidor con fastapi, estando la consola en la carpeta de web-server ejecutar:
+
+    -   uvicorn main:app --reload
