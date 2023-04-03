@@ -1,0 +1,23 @@
+1. crear el archivo Dockerfile
+    * RUN pip intall --no-cache-dir --upgrade -r /app/requirements.txt
+        =>  es para correr la app, se le dice que no use el cache y que se actualice el sistema si es necesario, -r no sé q es 
+    
+    * COPY . app/
+        => copia todo los archivos a la carpeta app/
+
+    * CMD bash -c "while true; do sleep 1; done"
+        => código de bash, es para que el sistema esté siempre encendido.
+
+2. docker-compose.yml
+
+* Para activar docker:
+    $   sudo service docker start
+    
+3. Para hacer build ejecute los sgtes cmds:
+    $   sudo docker compose build
+    $   sudo docker compose ps
+    $   sudo docker compose up -d
+    $   sudo docker compose exec app-csv bash
+
+4. Para detener el contenedor:
+    $   sudo docker-compose down
