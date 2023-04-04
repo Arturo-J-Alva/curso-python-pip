@@ -21,3 +21,9 @@
 
 4. Para detener el contenedor:
     $   sudo docker-compose down
+
+5. Para que el contenedor se actualice cada vez que se guarde una modificacion de código:
+    Agregar "volumen" y "- .:/app" en docker-compose.yml
+    Luego ejecutar :
+        $   sudo docker compose up -d 
+    ... para actualizar la configuración de docker.
