@@ -8,7 +8,13 @@
     * CMD bash -c "while true; do sleep 1; done"
         => código de bash, es para que el sistema esté siempre encendido.
 
+    * En el caso de levantar un web-server, se debe agregar al CMD: 
+        => CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+
 2. docker-compose.yml
+    * En el caso de levantar un web-server agregar ports 'puerto_de_mi_maquina:puerto_del_contenedor':
+        ports:
+            - '80:80'
 
 * Para activar docker:
     $   sudo service docker start
@@ -17,7 +23,10 @@
     $   sudo docker compose build
     $   sudo docker compose ps
     $   sudo docker compose up -d
-    $   sudo docker compose exec app-csv bash
+    $   sudo docker compose exec app-csv bash 
+
+        * en el caso del protecto web-server:
+            $    sudo docker compose exec web-server bash 
 
 4. Para detener el contenedor:
     $   sudo docker-compose down

@@ -18,7 +18,8 @@ def get_contact():
             <title>Holi probando ando</title>
         </head>
         <body>
-            <p>Soy un párrafo</p>
+            <h1>Soy un párrafo</h1>
+            <p>Probando ando xx</p>
         </body>
     </html>
     """
